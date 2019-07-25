@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+        <head>
+          <title>Eviction Resource</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <link rel="stylesheet" type="text/css" href="mainCSS.css">
+          <link rel="stylesheet" type="text/css" href="areas_served.css">
+        </head>
+        
+        <body>
+
+        <div class="header_bar">
+            <img src="mobile_icon_3.png" class="mobile_icon" onclick="open_modal()"/>
+            <div class="navbar_website_title">Eviction Resource</div>
+            <a class="button_phone_number">Call: (510) 764-3838</a>      
+            <ul class="header_buttons_wrapper">
+                <li><a onclick="home_button_execute()">Home</a></li>                
+                <li><a onclick="about_us_button_execute()">About Us</a></li>                
+                <li><a onclick="services_button_execute()">Services</a></li>                               
+                <li><a onclick="areas_served_button_execute()">Areas Served</a></li>
+                <li><a onclick="contact_us_button_execute()">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="Modal" id="modal_id">
+          <img src="close_button.png" onclick="close_modal()"/>
+          <div>
+            <div onclick="mobile_home_button_execute()">Home</div>
+            <div onclick="mobile_about_us_button_execute()">About Us</div>
+            <div onclick="mobile_services_button_execute()">Services</div>
+            <div onclick="mobile_areas_served_button_execute()">Areas Served</div>
+            <div onclick="mobile_contact_us_button_execute()">Contact Us</div>
+            <div><a href="tel:5107643838">(510) 764-3838</a></div>
+          </div>
+        </div>
+    
+        <div class="background_image">
+        <div class="home_page_context">
+            <h2>Welcome to</h2>             
+            <hr/>
+            <h2>Eviction Resource</h2>            
+        </div>
+        </div>
+
+      <div id="mobile_about_us_id"></div>
+
+      <div class="About_Us_Panel_Container">
+        <div class="About_Us_Panel_Container_Contained">
+            <div class="About_Us_Master_Container">
+              <div class="About_Us_Container">          
+                <h3>About Us</h3>
+                <hr class="hr_above_about_us"/>
+                <p class="About_Us_Paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse pretium bibendum lacus.Nunc faucibus mattis ullamcorper.Cras et nulla vitae nunc lacinia consectetur vitae nec est.Suspendisse nulla justo, mollis non magna at, iaculis cursus massa.Etiam ultricies ipsum a nibh pulvinar, at posuere ante imperdiet.Morbi ut consectetur tellus.Proin lacinia velit nec interdum gravida.Duis libero risus, pulvinar id condimentum a, placerat eu justo.Etiam nisl nisl, sodales vel imperdiet in , efficitur eu ligula.Quisque ac ex sed tellus laoreet semper a fringilla tellus.Nam ac dui lorem.Nam luctus vulputate mi et rhoncus.Aliquam vitae ante vel eros condimentum pellentesque.Pellentesque hendrerit mi eu venenatis interdum.
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <div id="mobile_services_id"></div>
+
+      <div class="Services_Panel_Container">
+          <div class="Services_Panel_Container_Spacer"></div>
+          <div class="Services_Master_Container">
+            <div class="Services_Title">
+              <h2 id="mobile_services_id">Eviction Package</h2>
+              <hr class="hr_above_services"/>
+            </div>
+
+            <div class="Services_Container">
+              <h3>$499.00 Flat Rate Package Includes the following:</h3>
+              <div class="Services_ul_li_Container">
+                <ul>
+                  <li>Initial consultant with experienced Intake Specialist</li>
+                  <ul>
+                    <li class="li_indented">Document Preparation include all notices and court forms, local forms, Prejudgment CRTP</li>
+                  </ul>
+                  <li>Case Filing</li>
+                  <ul>
+                    <li>Professional Process Service of Court Documents on all Defendants (including Prejudgment Claim of Right to Possession</li>              
+                  </ul>
+                  <li>Subsequent Filing for Restitution of Premises</li>
+                  <li>Judgement - Unlawful Detainer</li>
+                  <li>Declaration of Default</li>
+                  <li>Default Judgement</li>            
+                  <li>Trial Setting Service (if needed)</li>
+                  <li>Request/Counter - Request to Set Case for Trial</li>
+                  <li>Substitution of Attorney</li>
+                </ul>
+              </div>            
+            </div>
+          </div>
+      </div>
+
+      <div id="mobile_areas_served_id"></div>
+
+      <div class="Areas_Served_Panel_Container">
+        <div class="Areas_Served_Panel_Container_Contained">
+
+          <div class="Areas_Served_Master_Container">
+            <div class="Areas_Served_Title">
+              <h2>Areas Served</h2>
+              <h3 id="mobile_areas_served_id">(Click for details)</h3>
+              <hr/>    
+            </div>
+            <div class="Areas_Served_Container">
+
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.courts.ca.gov/selfhelp-eviction.htm"))>
+                  <div class="Specific_Area_Served_Title">San Francisco</div>
+              </div>
+            
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.placer.courts.ca.gov/division-civil-ud.shtml"))>
+                <div class="Specific_Area_Served_Title">Placer County</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.solanocounty.com/depts/sheriff/civil_bureau/evictions.asp"))>
+                <div class="Specific_Area_Served_Title">Solano</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.marincourt.org/civil_special.htm"))>
+                <div class="Specific_Area_Served_Title">Marin</div>
+              </div>
+
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.cc-courts.org/ud/ud.aspx"))>
+                <div class="Specific_Area_Served_Title">Contra Costa</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://sonoma.courts.ca.gov/forms-filing/packets/unlawful-detainer-eviction"))>
+                <div class="Specific_Area_Served_Title">Sonoma</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.stanct.org/sites/default/files/Complaint%20-%20Unlawful%20Detainer%20%28Eviction%29.pdf"))>
+                <div class="Specific_Area_Served_Title">Stanislaus</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.scscourt.org/self_help/civil/ud/ud_home.shtml"))>
+                <div class="Specific_Area_Served_Title">Santa Clara</div>
+              </div>
+
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.sjcourts.org/divisions/unlawful-detainer-landlord-tenant/"))>
+                <div class="Specific_Area_Served_Title">San Joaquin</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://california.tylerhost.net/SRL/SRL/ExecuteInterviews"))>
+                <div class="Specific_Area_Served_Title">Napa</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.courts.ca.gov/selfhelp-housing.htm"))>
+                <div class="Specific_Area_Served_Title">Alameda</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.sanbenito.courts.ca.gov/new_site/court_divisions/small_claims_div.shtml"))>
+                <div class="Specific_Area_Served_Title">San Benito</div>
+              </div>
+
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.saccourt.ca.gov/ud/ud.aspx"))>
+                <div class="Specific_Area_Served_Title">Sacramento</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.sanmateocourt.org/self_help/workshop_landlord.php"))>
+                <div class="Specific_Area_Served_Title">San Mateo</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.monterey.courts.ca.gov/mediation/small-claims-unlawful-detainer"))>
+                <div class="Specific_Area_Served_Title">Monterey</div>
+              </div>
+              
+              <div class="Specific_Area_Served_Container" onclick=(window.open("https://www.courts.ca.gov/20130.htm"))>
+                <div class="Specific_Area_Served_Title">Santa Cruz</div>
+              </div>
+              
+              </div>                
+            </div>    
+          </div>
+      </div>
+
+      <div id="mobile_contact_us_id"></div>
+
+        <div class="Contact_Us_Container">
+          <form action="./email_process.php" method="post" id="form_id">
+            <div class="Form_Section">
+              <label>First Name: </label>
+              <input type="text" placeholder="First Name" name="first_name"/>
+            </div>
+
+            <div class="Form_Section">
+              <label>Last Name: </label>            
+              <input type="text" placeholder="Last Name" name="last_name"/>
+            </div>
+
+            <div class="Form_Section">
+                <label>Email: </label>
+                <input type="email" placeholder="E-Mail" name="email"/>
+            </div>
+
+            <div class="Form_Section">
+              <label>Phone: </label>
+              <input type="tel" placeholder="Phone Number" name="phone"/>
+            </div>
+
+            <div class="Form_Section">
+              <label>Message: </label>
+              <textarea class="Form_Message_Box" type="text" placeholder="Your message here.." name="message"></textarea>
+            </div>
+
+            <input type="submit" class="Form_Submit_Button" name="form_submit_button"/>
+          </form>
+        </div>
+   
+        <script>
+
+          // Open and Close Modal Functions
+          //----------------------------------------------------------------------------------
+              const open_modal = () => {
+                document.getElementById("modal_id").style.display = "block";
+              }
+          
+              const close_modal = () => {
+                document.getElementById("modal_id").style.display = "none";
+              }
+          //----------------------------------------------------------------------------------
+                    
+          
+          // Mobile Buttons
+          //----------------------------------------------------------------------------------    
+              const mobile_home_button_execute = () => {
+                window.scroll({top: 0, behavior: 'smooth'});
+                close_modal();      
+              }
+          
+              const mobile_about_us_button_execute = () => {      
+                let i = document.getElementById("mobile_about_us_id").offsetTop;
+                window.scroll({top: i-57, behavior: 'smooth'});
+                close_modal();
+              }
+          
+              const mobile_services_button_execute = () => {
+                let i = document.getElementById("mobile_services_id").offsetTop;
+                window.scroll({top: i-57, behavior: 'smooth'});
+                close_modal();
+              }
+          
+              const mobile_areas_served_button_execute = () => {
+                let i = document.getElementById("mobile_areas_served_id").offsetTop;
+                window.scroll({top: i-57, behavior: 'smooth'});
+                close_modal();
+              }
+          
+              const mobile_contact_us_button_execute = () => {
+                let i = document.getElementById("mobile_contact_us_id").offsetTop;
+                window.scroll({top: i-37.3, behavior: 'smooth'});
+                close_modal();
+              }
+          //----------------------------------------------------------------------------------
+          
+          
+          // Desktop Buttons
+          //----------------------------------------------------------------------------------
+              const home_button_execute = () => {
+                window.scroll({top: 0, behavior: 'smooth'});
+              }
+          
+              const about_us_button_execute = () => {
+                window.scroll({top: window.innerHeight, behavior: 'smooth'});
+              }
+          
+              const services_button_execute = () => {
+                window.scroll({top: window.innerHeight * 2, behavior: 'smooth'});
+              }
+          
+              const areas_served_button_execute = () => {
+                window.scroll({top: window.innerHeight * 3, behavior: 'smooth'});
+              }
+          
+              const contact_us_button_execute = ()  => {
+                window.scroll({top: window.innerHeight * 4, behavior: 'smooth'});
+              }
+          //----------------------------------------------------------------------------------
+          
+          </script>
+
+      </body>
+      
+
+      <footer>
+          <div>
+            &copy 2019 Eviction Resource
+          </div>
+      </footer>   
+     
+     </html>

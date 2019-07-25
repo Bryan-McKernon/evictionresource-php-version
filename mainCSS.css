@@ -1,0 +1,828 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+hr {
+    margin: 0px;
+}
+
+.mobile_icon { 
+    float: left;
+    padding: 0px;
+    margin: 6px 0px 6px 2.5%;    
+    height: 45px;
+    width: 45px;
+    color: white;
+    z-index: 1;
+    position: fixed;
+}
+
+.navbar_website_title {
+    color: white;
+    font-weight: bold;
+    font-size: 18px; 
+    /*
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        can override Georgia setting that was applied to all * 
+    */
+    font-style: bold;
+    position: fixed;
+    z-index: 1;
+    white-space: nowrap;
+    margin: 26.25px 0px 26.25px 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Areas_Served_Container{
+    width: 90%;
+    margin-left: 5%;    
+}
+
+.Form_fail_label {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: red;
+}
+        
+.Modal {
+    display: none;
+    height: 100vh;
+    width: 100vw;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(122, 171, 204);
+}
+
+.Modal img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+.Modal div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Modal div div {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 4vh 0;
+}
+
+.Modal div div a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 0 4vh 0;
+}
+
+.Modal div div:hover {
+    cursor: pointer;
+}
+
+
+/*Up to this screen size do these things (mobile)*/
+@media only screen and (max-width: 900px) {
+    
+    /*
+    .background_image {
+        background-image: url(./Images/judge_mallet.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    */
+        
+
+    .header_bar {
+        width: 100%;
+        height: 57px;
+        /*opacity for navbar causes issue when scrolling past image*/
+        background-color: #344c5d;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .header_buttons_wrapper li{
+        display: none;
+    }
+
+    .button_phone_number {
+        display: none;
+    }
+
+    .home_page_context {
+        margin: 90px 10% 0 10%;
+        width: 80%;     
+        color: black;   
+        text-align: center;
+        padding: 0;
+    }
+
+    .home_page_context hr {
+        margin: 2% 0 2% 0;
+    }
+
+    .About_Us_Container {
+        background-color: white;
+        width: 100%;
+        margin: 6vh 0 0 0;
+        /*
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+        box-shadow: 1px 1px 1px 1px rgb(214, 214, 214);
+        */
+        }
+
+    .About_Us_Container h3 {
+        padding: 0 0 0 5%;
+        margin: 0;
+    }
+
+    .hr_above_about_us {
+        width: 90%;
+        margin: 2% 5% 2% 5%;
+    }
+
+    .About_Us_Paragraph {
+        padding: 0 5% 0 5%;
+        width: 90%;
+        margin: 0px;
+    }
+
+    /*
+    .three_circles {
+        height: 40px;
+        width: 40px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 50px;
+        background-image: linear-gradient(rgb(180, 180, 180), white);    
+        opacity: .2;   
+        margin-left: 50%;
+        margin-top: 1%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+        position: relative;
+    }
+*/
+
+    .Services_Master_Container {
+        width: 90%;
+        margin: 8vh 5vw 0 5vw;
+        padding: 2.5% 0 2.5% 0;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0px 0px 2px 2px rgba(199, 199, 199, 0.3);
+    }
+
+    .Services_Title {        
+        background-color: transparent;
+        margin: 1% 5% 1% 5%;
+        padding: 0;
+        width: 90%;
+        text-align: center;
+    }
+
+    .Services_Title hr {
+        margin: 10px 0 0 0;
+    }
+
+    .Services_Container {
+        width: 90%;
+        margin: 10px 5% 0 5%;
+    }
+
+    .Services_Container h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Services_ul_li_Container {
+        width: 90%;
+        margin: 16px 5% 0 5%;
+    }
+
+    .Services_ul_li_Container ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .Services_ul_li_Container li {
+        font-size: 16px;        
+        margin: 6px 0 0 0;
+        width: 100%;
+    }
+
+    .Services_ul_li_Container ul ul{
+        margin: 0 0 0 12px;
+    }
+
+    
+
+/*
+    .Services_Container {
+        display: grid;
+        grid-template-columns: 35vw 35vw;
+        grid-row-gap: 2.5vh;
+        grid-column-gap: 10vw;
+        justify-content: center;
+        background-color: whitesmoke;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;        
+        padding: 3.5vh 0 3.5vh 0;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+    }
+*/
+    .Areas_Served_Master_Container {
+        margin: 5vh 0 0 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    .Areas_Served_Title {
+        background-color: transparent;
+        margin: 5% 10% 0 10%;
+        width: 80%;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Areas_Served_Title hr {
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+
+    .Areas_Served_Container {
+        display: grid;
+        grid-template-columns: 35% 35%;                
+        grid-row-gap: 2.5vh;
+        grid-column-gap: 10%;        
+        justify-content: center;
+        background-color: transparent;
+        margin: 0px;
+        width: 100%;
+        padding: 3.5vh 0 3.5vh 0;
+    }
+
+    .Contact_Us_Container {     
+        background-color: rgba(55, 140, 173, 0.315);        
+        padding: 3.5vh 0 6vh 0;
+        margin: 2.5vh 0 0 0;
+    }
+
+    .First_Form_Section {
+        margin: 0;
+    }
+
+    label {
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    input {
+        width: 99%;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 5px 0 0 0;
+        padding: 8px 0 8px 1%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 4px;     
+        color: black;   
+    }
+
+    .Form_Message_Box {
+        width: 99%;
+        height: 120px;
+        font-size: 16px;
+        margin: 5px 0 0 0;
+        padding: 8px 0 8px 1%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 4px;     
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black; 
+    } 
+    
+    .Form_Section {
+        padding: 2.5vh 10% 2.5vh 10%;
+        width: 80%;
+    }
+
+    .Form_Submit_Button {
+        height: 55px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 12px;
+        border-color: transparent;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 70%;
+        margin: 5% 15% 0 15%;
+        background-color: white;
+    }
+
+    .Thank_You_Form_Success {
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 56px;
+        text-align: center;
+        margin: 250px 0 250px 0;
+    }
+
+    footer {
+        background-color: rgb(107, 107, 107);
+        width: 100%;
+        height: 48.5px;
+        text-align: center;
+        position: relative;        
+    }
+
+    footer div {
+        position: absolute;
+        font-weight: bold;
+        font-size: 16px;
+        bottom: 0;
+        width: 80%;
+        margin: 15px 10% 15px 10%;
+        color: white;
+    }
+}
+
+/*------------------------------^^^^^^^^^^^^ Mobile ^^^^^^^^^^^^------------------------------/*
+/*------------------------------vvvvvvvvvvvv Desktop vvvvvvvvvvvv------------------------------*/
+
+/*This size or larger do these things (desktop)*/
+@media only screen and (min-width: 901px) {
+  
+    html {
+        background-color: rgba(166, 213, 245, 0.192);
+    }
+
+    .header_bar {
+        width: 100vw;
+        height: 57px;
+        /*opacity for navbar causes issue when scrolling past image*/
+        background-color: #344c5dcc;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+        
+    .header_buttons_wrapper {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        height: 100%;
+        padding-left: 2.5%;
+    }
+
+    .header_buttons_wrapper li {
+        float: left;
+    }
+
+    .header_buttons_wrapper li a {
+        display: block;        
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        padding: 18px;  
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        word-wrap: break-word;
+    }
+
+    .header_buttons_wrapper li:hover {
+        background-color: #333333;
+        cursor: pointer;
+    }
+        
+    .button_phone_number {
+        display: block;
+        color: #FFFFFF;
+        text-align: right;
+        font-weight: bold;
+        padding: 16px;  
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+        margin: 0px 4% 0px 0px;
+        width: 24%;
+        z-index: 1;
+    }
+    
+    .mobile_icon {
+        display: none;
+    }
+
+    .navbar_website_title {
+        display: none;
+    }
+        
+    .background_image {
+        background-image: url(judge_mallet.jpg);
+        height: 100vh;
+        /*min-height: 397px; */
+        /*Height min is max height of child + 114px to balance out 57px navbar*/
+        min-height: 511px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .home_page_context {
+        white-space: nowrap;
+        font-size: 22px;
+        position: relative;
+        top: 50%;       
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        background-color: rgba(255, 255, 255, 0.555);
+        width: 30%;
+        padding: 150px 250px 150px 250px;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 12px;        
+        text-align: center;
+    }
+
+    .home_page_context hr {
+        margin: 10px 0 10px 0;
+    }
+
+
+
+
+
+
+
+    /*
+
+    .Mid_Master_Container {
+        background-image: linear-gradient(rgb(173, 192, 199), rgb(212, 236, 211));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 3vh 0 6vh 0;
+    }
+
+*/
+
+
+
+
+    
+
+    .About_Us_Panel_Container {
+        background-color: rgb(163, 187, 156);
+        top: 100vh;
+        background-size: cover;
+        height: 100vh;
+        /*min-height: 1102px;*/
+        /*min-height: 537px;*/
+        /*Height min is max height of child + 114px to balance out 57px navbar*/
+        min-height: 651px;
+    }
+
+    .About_Us_Panel_Container_Contained {
+        background-color: rgb(111, 156, 190);        
+        height: 100%;
+        width: 60%;
+    }
+
+    .About_Us_Master_Container {
+        background-color: rgba(255, 255, 255, 0.8);
+        position: relative;
+        width: 60%;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 15%;
+        padding: 25px 5% 25px 5%;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+        box-shadow: 0px 0px 2px 2px rgba(199, 199, 199, 0.3);
+    }
+    
+    .About_Us_Container {
+        width: 95%;
+    }
+
+    .About_Us_Container h3 {
+        margin: 0;
+    }
+
+    .hr_above_about_us {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+
+    .About_Us_Paragraph {
+        width: 100%;
+        font-size: 18px;
+        margin: 5px 0 0 0;        
+    }
+
+
+
+
+/*This one is different from About and Area in that there is a spacer.
+In this case Services_Panel_Container contains BOTH Container_Spacer AND Services_Master
+Services_Master is NOT a child div of Services_Panel_Container_Spacer*/
+    .Services_Panel_Container {
+        top: 100vh;
+        height: 100vh;
+        /*min-height: 574.5px;*/
+        /*Height min is max height of child + 114px to balance out 57px navbar*/
+        min-height: 688.5px;
+        background-color: rgb(235, 235, 196);
+        background-size: cover;
+    }
+
+    .Services_Panel_Container_Spacer {
+        background-color: rgb(145, 163, 131);
+        height: 100%;
+        width: 30%;
+    }
+
+    .Services_Master_Container {
+        position: relative;
+        bottom: 50%;
+        transform: translate(0, -50%);
+        left: 40%;
+        width: 40%;
+        padding: 45px 5% 45px 5%;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0px 0px 2px 2px rgba(199, 199, 199, 0.3);
+    }
+
+    .Services_Title {        
+        background-color: transparent;
+        margin: 0 2.5% 0 2.5%;
+        padding: 0;
+        width: 95%;
+        text-align: center;
+    }
+
+    .Services_Title hr {
+        margin: 5px 0 0 0;
+    }
+
+    .Services_Container {
+        width: 95%;
+        margin: 5px 2.5% 0 2.5%;
+    }
+
+    .Services_Container h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Services_ul_li_Container {
+        width: 90%;
+        margin: 16px 5% 0 5%;
+    }
+
+    .Services_ul_li_Container ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .Services_ul_li_Container li {
+        font-size: 16px;        
+        margin: 6px 0 0 0;
+        width: 100%;
+    }
+
+    .Services_ul_li_Container ul ul{
+        margin: 0 0 0 12px;
+    }
+
+
+
+
+
+
+
+
+
+    .Areas_Served_Panel_Container {
+        top: 100vh;
+        background-color: rgb(211, 159, 159);
+        background-size: cover;
+        height: 100vh;
+        /*min-height: 478.5px;*/
+        /*Height min is max height of child + 114px to balance out 57px navbar*/
+        min-height: 592.5px;
+    }
+
+    .Areas_Served_Panel_Container_Contained {
+        background-color: rgb(125, 161, 137);
+        height: 100%;
+        width: 70%;
+    }
+
+    .Areas_Served_Master_Container {
+        position: relative;
+        width: 75%;
+        left: 7.5%;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: white;
+        padding: 15px 5% 25px 5%;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 12px;
+        box-shadow: 0px 0px 2px 2px rgba(199, 199, 199, 0.3);
+    }
+
+    .Areas_Served_Title {
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Areas_Served_Title hr {
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    .Areas_Served_Container {
+        display: grid;
+        grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+        grid-row-gap: 25px;
+        justify-content: center;
+        grid-column-gap: 2%; 
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .Contact_Us_Container { 
+        background-color: rgba(32, 148, 194, 0.45);
+        background-size: cover;
+        height: 100vh;
+        /*Height min is max height of child + 114px to balance out 57px navbar*/        
+        min-height: 672px;
+        margin: 0;
+    }
+
+    form {
+        position: relative;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .First_Form_Section {
+        margin: 0;
+    }
+
+    label {
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;        
+    }
+
+    input {
+        width: 99%;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 5px 0 0 0;
+        padding: 8px 0 8px 1%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 4px;     
+        color: black;   
+    }
+
+    .Form_Message_Box {
+        width: 99%;
+        height: 120px;
+        font-size: 16px;
+        margin: 5px 0 0 0;
+        padding: 8px 0 8px 1%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 4px;     
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black; 
+    } 
+    
+    .Form_Section {
+        margin: 0 32.5% 15px 32.5%;
+        padding: 0;
+        width: 35%;
+    }
+
+    .Form_Submit_Button {
+        height: 55px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 12px;
+        border-color: transparent;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 15%;
+        margin: 25px 42.5% 0 42.5%;
+        padding: 0;
+        background-color: white;
+    }
+
+    .Form_Submit_Button:hover {
+        cursor: pointer;
+    }
+
+
+
+
+    .Thank_You_Form_Success {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 56px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    footer {
+        background-color: rgb(107, 107, 107);
+        background-size: cover;
+        height: 48.5px;
+        text-align: center;
+        position: relative;        
+    }
+
+    footer div {
+        position: absolute;
+        font-weight: bold;
+        font-size: 16px;
+        bottom: 0;
+        width: 80%;
+        margin: 15px 10% 15px 10%;
+        color: white;
+    }
+}
