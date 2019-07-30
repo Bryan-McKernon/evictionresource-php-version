@@ -127,7 +127,7 @@ hr {
         width: 100%;
         height: 57px;
         /*opacity for navbar causes issue when scrolling past image*/
-        background-color: #344c5d;
+        background-color: rgb(52, 76, 93);
         position: fixed;
         top: 0px;
         z-index: 1;
@@ -165,7 +165,7 @@ hr {
         */
         }
 
-    .About_Us_Container h3 {
+    .About_Us_Container h2 {
         padding: 0 0 0 5%;
         margin: 0;
     }
@@ -305,12 +305,8 @@ hr {
         background-color: rgba(55, 140, 173, 0.315);        
         padding: 3.5vh 0 6vh 0;
         margin: 2.5vh 0 0 0;
-    }
-
-    .First_Form_Section {
-        margin: 0;
-    }
-
+    }    
+    
     label {
         width: 100%;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -369,22 +365,37 @@ hr {
         margin: 250px 0 250px 0;
     }
 
+
+    
     footer {
         background-color: rgb(107, 107, 107);
-        width: 100%;
-        height: 48.5px;
+        background-size: cover;
+        height: 110px;
         text-align: center;
         position: relative;        
     }
 
-    footer div {
-        position: absolute;
+    footer ul {
+        position: relative;
         font-weight: bold;
-        font-size: 16px;
-        bottom: 0;
-        width: 80%;
-        margin: 15px 10% 15px 10%;
+        font-size: 14px;
         color: white;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    } 
+
+    footer ul li {
+        margin: 5px 0 5px 0;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -395,14 +406,16 @@ hr {
 @media only screen and (min-width: 901px) {
   
     html {
-        background-color: rgba(166, 213, 245, 0.192);
+        background-color: rgba(166, 213, 245, 0.192);             
     }
 
     .header_bar {
         width: 100vw;
         height: 57px;
         /*opacity for navbar causes issue when scrolling past image*/
-        background-color: #344c5dcc;
+        /*rgba needed for edge..cc means 80% opacity*/      
+        /*#344c5dcc;*/
+        background-color: rgba(52, 76, 93, .80);
         position: fixed;
         top: 0px;
         left: 0px;
@@ -490,30 +503,7 @@ hr {
 
     .home_page_context hr {
         margin: 10px 0 10px 0;
-    }
-
-
-
-
-
-
-
-    /*
-
-    .Mid_Master_Container {
-        background-image: linear-gradient(rgb(173, 192, 199), rgb(212, 236, 211));
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 3vh 0 6vh 0;
-    }
-
-*/
-
-
-
-
-    
+    }    
 
     .About_Us_Panel_Container {
         background-color: rgb(163, 187, 156);
@@ -550,7 +540,7 @@ hr {
         width: 95%;
     }
 
-    .About_Us_Container h3 {
+    .About_Us_Container h2 {
         margin: 0;
     }
 
@@ -733,10 +723,14 @@ Services_Master is NOT a child div of Services_Panel_Container_Spacer*/
         transform: translate(-50%, -50%);
     }
 
-    .First_Form_Section {
-        margin: 0;
+    .Contact_Us_Text {
+        text-align: center;
     }
 
+    .Form_Section hr {
+        color: white;
+    }
+   
     label {
         width: 100%;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -808,21 +802,42 @@ Services_Master is NOT a child div of Services_Panel_Container_Spacer*/
 
 
 
+
+
+
     footer {
         background-color: rgb(107, 107, 107);
         background-size: cover;
         height: 48.5px;
         text-align: center;
-        position: relative;        
+        position: relative;   
+        margin: 0;
+        padding: 0;
     }
 
-    footer div {
-        position: absolute;
+    footer ul {
+        position: relative;
         font-weight: bold;
-        font-size: 16px;
-        bottom: 0;
-        width: 80%;
-        margin: 15px 10% 15px 10%;
+        font-size: 14px;
         color: white;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer ul li {
+        display: inline;
+        float: none;
+        margin: 0 .5% 0 .5%;
+        color: white;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
     }
 }
