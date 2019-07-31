@@ -1,12 +1,12 @@
 <?php
 if (!isset($_POST["form_submit_button"])) {
-    header("Location: /index.html");
+    header("Location: /index.php");
     die();
 }
 
 function testInput($input) {
     if (!isset($input) || empty($input)) {
-        header("Location: /form_error.html#mobile_contact_us_id");
+        header("Location: /form_error.php");
         die();
     } 
 }
@@ -24,7 +24,7 @@ $phone = $_POST["phone"];
 $message = $_POST["message"];
 
 
-$to_email = "bryanmckernon@gmail.com";
+$to_email = "info@evictionresource.com";
 $subject_email = "Eviction Resource Email";
 $message_email = 
 "From: " . $email . "\n\n" .
@@ -37,5 +37,5 @@ $headers_email =
 "Reply-To: " . $email . "\n";
 
 mail($to_email, $subject_email, $message_email, $headers_email);
-header("Location: /form_success.html#mobile_contact_us_id");
+header("Location: /form_success.php");
 ?>
