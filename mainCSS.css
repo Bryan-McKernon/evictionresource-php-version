@@ -111,18 +111,7 @@ hr {
 
 /*Up to this screen size do these things (mobile)*/
 @media only screen and (max-width: 900px) {
-    
-    /*
-    .background_image {
-        background-image: url(./Images/judge_mallet.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    */
         
-
     .header_bar {
         width: 100%;
         height: 57px;
@@ -133,11 +122,11 @@ hr {
         z-index: 1;
     }
 
-    .header_buttons_wrapper li{
+    .header_buttons_wrapper li {
         display: none;
     }
-
-    .button_phone_number {
+    
+    .phone_number_text { 
         display: none;
     }
 
@@ -156,14 +145,8 @@ hr {
     .About_Us_Container {
         background-color: white;
         width: 100%;
-        margin: 6vh 0 0 0;
-        /*
-        border-style: solid;
-        border-color: transparent;
-        border-radius: 12px;
-        box-shadow: 1px 1px 1px 1px rgb(214, 214, 214);
-        */
-        }
+        margin: 6vh 0 0 0;     
+    }
 
     .About_Us_Container h2 {
         padding: 0 0 0 5%;
@@ -180,23 +163,6 @@ hr {
         width: 90%;
         margin: 12px 0 0 0;
     }
-
-    /*
-    .three_circles {
-        height: 40px;
-        width: 40px;
-        border-style: solid;
-        border-color: black;
-        border-radius: 50px;
-        background-image: linear-gradient(rgb(180, 180, 180), white);    
-        opacity: .2;   
-        margin-left: 50%;
-        margin-top: 1%;
-        transform: translate(-50%, -50%);
-        z-index: -2;
-        position: relative;
-    }
-*/
 
     .Services_Master_Container {
         width: 90%;
@@ -252,24 +218,6 @@ hr {
         margin: 0 0 0 12px;
     }
 
-    
-
-/*
-    .Services_Container {
-        display: grid;
-        grid-template-columns: 35vw 35vw;
-        grid-row-gap: 2.5vh;
-        grid-column-gap: 10vw;
-        justify-content: center;
-        background-color: whitesmoke;
-        width: 90vw;
-        margin: 0 5vw 0 5vw;        
-        padding: 3.5vh 0 3.5vh 0;
-        border-style: solid;
-        border-color: transparent;
-        border-radius: 12px;
-    }
-*/
     .Areas_Served_Master_Container {
         margin: 5vh 0 0 0;
         width: 100%;
@@ -365,8 +313,6 @@ hr {
         margin: 250px 0 250px 0;
     }
 
-
-    
     footer {
         background-color: rgb(107, 107, 107);
         background-size: cover;
@@ -451,7 +397,7 @@ hr {
         cursor: pointer;
     }
         
-    .button_phone_number {
+    .phone_number_text {
         display: block;
         color: #FFFFFF;
         text-align: right;
@@ -554,8 +500,6 @@ hr {
         font-size: 18px;
         margin: 18px 0 0 0;        
     }
-
-
 
 
 /*This one is different from About and Area in that there is a spacer.
@@ -711,7 +655,7 @@ Services_Master is NOT a child div of Services_Panel_Container_Spacer*/
         background-size: cover;
         height: 100vh;
         /*Height min is max height of child + 114px to balance out 57px navbar*/        
-        min-height: 672px;
+        min-height: 731.5px;
         margin: 0;
     }
 

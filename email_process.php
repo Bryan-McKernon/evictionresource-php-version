@@ -24,7 +24,7 @@ $phone = $_POST["phone"];
 $message = $_POST["message"];
 
 
-$to_email = "info@evictionresource.com";
+$to_email = "rui@bayareaprocessservers.com";
 $subject_email = "Eviction Resource Email";
 $message_email = 
 "From: " . $email . "\n\n" .

@@ -6,7 +6,8 @@
           rental agreements, rental forms, section 21, lease, lease agreement, removing a tenant,
           tenant removal, tenant eviction">
           <meta name="description" content="Welcome to Eviction Resource (510) 764-3838">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <meta name="format-detection" content="telephone=no"/>
           <link rel="stylesheet" type="text/css" href="mainCSS.css">
           <link rel="stylesheet" type="text/css" href="areas_served.css">
         </head>
@@ -16,7 +17,7 @@
         <div class="header_bar" id="header_bar_id">
             <img src="mobile_icon_3.png" class="mobile_icon" onclick="open_modal()"/>
             <div class="navbar_website_title">Eviction Resource</div>
-            <a class="button_phone_number">Call: (510) 764-3838</a>      
+            <div class="phone_number_text">Call: (510) 764-3838</div>
             <ul class="header_buttons_wrapper">
                 <li><a onclick="home_button_execute()">Home</a></li>                
                 <li><a onclick="about_us_button_execute()">About Us</a></li>                
@@ -57,14 +58,14 @@
                   <p class="About_Us_Paragraph">
                   EvictionResource.com takes pride in our quality of service, successful track-record,
                   and our impeccable reputation. Get some of the most experienced, knowledgeable, and
-                  up-to-date industry experts working for you. We strive to offer a full-service solution
-                  to make your legal matters process stress free.
+                  up-to-date industry experts working for you. We strive to offer full-service solution
+                  to make your legal matter process stress free.
                   </p>
                   <p class="About_Us_Paragraph">
-                  The main difference between our service and our online service is that we are there for you every 
-                  step of the way. Our experience allows us to do it the right way the first time, resulting in a quick resolution. Since
-                  we are not attorneys, we can keep our costs reasonable. We actually answer our phones and 
-                  you get to talk to a real person. 
+                  The main difference between our service and other online companies is our service, we are there for you 
+                  every step of the way. Our experience allows us to do it the right way the first time, resulting in a 
+                  quick resolution. Since we are not attorneys, we can keep our costs reasonable. We actually answer our 
+                  phones and you get to talk to a real person. 
                   </p>
                   <p class="About_Us_Paragraph">
                   A personal touch can go a long way for matters as 
@@ -139,7 +140,7 @@
                   <div class="Specific_Area_Served_Title">Monterey</div>
                 </div>
               
-                <div class="Specific_Area_Served_Container" onclick=(window.open("https://california.tylerhost.net/SRL/SRL/ExecuteInterviews"))>
+                <div class="Specific_Area_Served_Container" onclick=(window.open("http://www.courts.ca.gov/forms.htm?filter=UD"))>
                   <div class="Specific_Area_Served_Title">Napa</div>
                 </div>
                 

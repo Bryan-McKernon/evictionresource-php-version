@@ -26,8 +26,8 @@ window.addEventListener("scroll", function (event) {
 
 // Mobile Buttons
 //----------------------------------------------------------------------------------    
-function mobile_home_button_execute()  {
-  if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    function mobile_home_button_execute()  {
+      if (document.documentMode || /Edge/.test(navigator.userAgent)) {
         window.scrollTo(0, 0);         
       } else {
       window.scroll({top: 0, behavior: 'smooth'});
