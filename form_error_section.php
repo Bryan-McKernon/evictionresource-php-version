@@ -2,6 +2,15 @@
 
 <div class="Contact_Us_Container">
   <form action="./email_process.php" method="post" id="form_id">
+
+    <div class="Form_Section">
+      <h2 class="Contact_Us_Text">Contact Us</h2>
+    </div>
+    
+    <div class="Form_Section">
+      <hr/>
+    </div>
+
     <div class="Form_Section">
       <label class="Form_fail_label" id="mobile_contact_us_id">* Please enter your first name</label>
       <input type="text" placeholder="First Name" name="first_name"/>

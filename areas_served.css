@@ -37,7 +37,7 @@
     }
 
     .Specific_Area_Served_Container:hover {
-        background-color: rgb(209, 198, 142);
+        background-color: lightblue;
         cursor: pointer;
     }
 
